@@ -10,3 +10,9 @@ export const contatoValidation = Joi.object({
   favorito: Joi.boolean()
 
 })
+
+export const usuarioValidation = Joi.object({
+  nome: Joi.string().max(150).required(),
+  email: Joi.string().email(),
+  senha: Joi.string()
+})
