@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { Contato } from "../models/contato.js";
 
 export const contatosRouter = Router()
 
